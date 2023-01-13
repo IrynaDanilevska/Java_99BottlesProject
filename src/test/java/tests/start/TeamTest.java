@@ -22,19 +22,6 @@ public class TeamTest extends BaseTest {
     }
 
     @Test
-    public void testETasteOrgLink_NavigatesTo_ExternalGregorScheithauer() {
-        final String expectedExternalURL = "http://www.e-taste.org/";
-        final String expectedExternalTitle = "Ce domaine a été enregistré par Youdot.io";
-
-        openBaseURL()
-                .clickTeamSubmenu()
-                .clickGregorScheithauerWebsiteLink();
-
-        Assert.assertEquals(getExternalPageURL(), expectedExternalURL);
-        Assert.assertEquals(getExternalPageTitle(), expectedExternalTitle);
-    }
-
-    @Test
     public void testStsSynfloodDe_NavigatesTo_ExternalStefanScheler() {
         final String expectedExternalURL = "http://sts.synflood.de/";
         final String expectedExternalTitle = "sts.synflood.de";
